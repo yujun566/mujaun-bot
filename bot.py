@@ -14,7 +14,8 @@ import re
 # ──────────────────────────────────────────────
 #  ✅ 1. 봇 토큰 설정
 # ──────────────────────────────────────────────
-TOKEN = "MTQ3NzI5OTM5NDQ4MjE0NzQ0Mg.GyiYy2.I9d3PhESMY-JK0PNUeZB0TAp2cfi9X7mfBbgP4"
+access_token - os.environ["BOT_TOKEN"]
+TOKEN = "access_token"
 
 # ══════════════════════════════════════════════
 #  🗄️ SQLite DB 설정
@@ -806,4 +807,5 @@ async def cmd_help(ctx):
 #  🚀 봇 실행
 # ══════════════════════════════════════════════
 init_db()
+
 bot.run(TOKEN)
